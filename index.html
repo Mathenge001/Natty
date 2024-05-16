@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -118,6 +118,57 @@ body {
     body {
   margin-top: 10vh; /* Adjust based on navbar height */
 }
+      .contact-form {
+      background-color: #d4af37; /* Gold */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .contact-form h3 {
+      color: #ff0000; /* Red */
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 18px;
+      color: #000; /* Black */
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000; /* Black */
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #fff; /* White */
+      color: #000; /* Black */
+    }
+
+    .form-group textarea {
+      height: 150px;
+    }
+
+    button[type="submit"] {
+      background-color: #ff0000; /* Red */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #8b0000; /* Dark Red */
+    }
 
 /* Header Styles */
 .homepage-header {
@@ -196,6 +247,62 @@ body {
 }
 
 
+ /* Form Styles */
+    .contact-form {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .contact-form h3 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-group textarea {
+      height: 150px;
+    }
+
+    button[type="submit"] {
+      background-color: #009688;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #00796b;
+    }
+
+
 /* Responsive styles */
 @media screen and (max-width: 600px) {
   table, tr, th, td {
@@ -222,9 +329,9 @@ body {
   <nav class="navbar">
   <div class="front">
     <div class="logo-container">
-      <img src="https://i.pinimg.com/564x/b5/f7/b6/b5f7b615cb6cecb84d5cb3ae80d91a09.jpg" alt="Natyy's Gym Logo" class="logo" style="width: 30px; height: 40px;">
-      <h1 class="logo">Natyy's Gym</h1>
-      <p class="logo-text"></p>
+    <h1 class="logo"><img src="https://i.pinimg.com/564x/b5/f7/b6/b5f7b615cb6cecb84d5cb3ae80d91a09.jpg" alt="Natyy's Gym Logo" style="width: 30px; height: 40px;">Natyy Gym</h1>
+
+        <p class="logo-text"></p>
     </div>
     <!-- Menu elements -->
 
@@ -239,75 +346,143 @@ body {
   </nav>
 
 
-   <!--------------------------------------------------------------------- Homepage ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+   <!------------------------- Homepage ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
   <header id="home" class="homepage-header" style="background-image: url('https://i.pinimg.com/564x/8f/34/2c/8f342c6fd9bc25e3ce41fab23ae81faa.jpg');">
     <div class="front">
-      <h1 class="logo animate_animated animate_fadeInDown">Welcome to Natyy's Gym</h1>
+      <h1 class="logo animate_animated animate_fadeInDown">Welcome to Natyy Gym</h1>
       <p class="tagline animate_animated animate_fadeInDown">Empowering Your Fitness Journey</p>
       <a href="#about" class="cta-btn animate_animated animate_fadeInUp">Explore Further</a>
     </div>
   </header>
 
 
-<!--------------------------------------- About Us ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-- Red border horizontal line with space -->
+<div style="border-top: 8px solid red; margin-top: 20px; margin-bottom: 20px;"></div>
+
+<!------------------------------ About Us ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <section id="about" class="section about-section">
   <div class="about">
     <h2 class="section-title animate__animated animate__fadeIn">About Us</h2>
     <p class="section-description animate__animated animate__fadeIn">At Natyy's Gym, we're more than just a fitness center. We're a community dedicated to helping you achieve your health and fitness goals in a supportive and motivating environment.</p>
     <div class="history animate__animated animate__fadeInLeft">
-      <h3>Our History</h3>
+     <h3 style="color: #0909dc; font-weight: bold;">Our History</h3>
       <p>Founded in [Year], Natyy's Gym has been serving the Nairobi community for [Number] years. Our journey started with a passion for fitness and a vision to create a space where everyone feels welcome and empowered to lead a healthy lifestyle.</p>
     </div>
-    <div class="team animate__animated animate__fadeInRight">
-      <h3>Meet the Team</h3>
-      <p>Our team of experienced trainers and staff are here to support you every step of the way. With diverse expertise in various fitness disciplines, we're committed to helping you reach your full potential.</p>
-
-      <!-- Trainer profiles carousel -->
-      <div id="aboutCarousel" class="carousel slide animate__animated animate__fadeIn" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://i.pinimg.com/564x/ba/1b/b1/ba1bb1bc3b93857fec474b15b005d6f9.jpg" class="d-block" alt="Trainer 1" style="width: 300px; height: 400px;">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Trainer Name 1</h5>
-              <p>Specialization: Yoga, Weightlifting</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://i.pinimg.com/564x/ad/40/d5/ad40d537a78001b97dcc1e4e92530a5c.jpg" class="d-block" alt="Trainer 2" style="width: 300px; height: 400px;">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Trainer Name 2</h5>
-              <p>Specialization: Zumba, CrossFit</p>
-            </div>
-          </div>
-          <!-- Add more carousel items as needed with actual image URLs and text -->
-        </div>
-        <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+   <!-- Trainer profiles carousel -->
+<div id="aboutCarousel" class="carousel slide animate__animated animate__fadeIn" data-ride="carousel">
+  <div class="carousel-inner">
+    <!-- team member 1 -->
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/564x/ba/1b/b1/ba1bb1bc3b93857fec474b15b005d6f9.jpg" class="d-block" alt="Trainer 1" style="width: 300px; height: 400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Trainer Name 1</h5>
+        <p>Specialization: Yoga, Weightlifting</p>
+      </div>
+    </div>
+    <!-- team member 2 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/ad/40/d5/ad40d537a78001b97dcc1e4e92530a5c.jpg" class="d-block" alt="Trainer 2" style="width: 300px; height: 400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Trainer Name 2</h5>
+        <p>Specialization: Zumba, CrossFit</p>
+      </div>
+    </div>
+    <!-- team member 3 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/3f/f5/0c/3ff50c8822849c870d5ccdc3bcabcb01.jpg" class="d-block" alt="Trainer 3" style="width: 300px; height: 400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Trainer Name 3</h5>
+        <p>Specialization: Yoga, HIIT (High-Intensity Interval Training)</p>
+      </div>
+    </div>
+    <!-- team member 4 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/01/83/20/018320c247eadd97571decb574188d01.jpg" class="d-block" alt="Trainer 4" style="width: 300px; height: 400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Trainer Name 4</h5>
+        <p>Specialization: Strength and Conditioning Coach</p>
+      </div>
+    </div>
+    <!-- team member 5 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/01/83/20/018320c247eadd97571decb574188d01.jpg" class="d-block" alt="Trainer 5" style="width: 300px; height: 400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Trainer Name 5</h5>
+        <p>Specialization: Nutrition Coach</p>
+      </div>
+    </div>
+    <!-- team member 6 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/51/68/8e/51688e0fcda47cae542c2f48f07435ef.jpg" class="d-block" alt="Trainer 6" style="width: 300px; height: 400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Trainer Name 6</h5>
+        <p>Specialization: Rehabilitation Specialist</p>
+      </div>
+    </div>
+    <!-- team member 7 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/8e/e1/96/8ee196e85099df29d486ffadf292d563.jpg" class="d-block" alt="Trainer 7" style="width: 300px; height: 400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Trainer Name 7</h5>
+        <p>Specialization: Motivational Coach</p>
+      </div>
+    </div>
+    <!-- team member 8 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/ce/78/6a/ce786ab04ac3632ac42305b015ab06d2.jpg" class="d-block" alt="Trainer 8" style="width: 300px; height: 400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Trainer Name 8</h5>
+        <p>Specialization: Sports-Specific Trainer</p>
+      </div>
+    </div>
+    <!-- team member 9 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/a6/fd/10/a6fd10646a09a8a78b108adaf49de5f1.jpg" class="d-block" alt="Trainer 9" style="width: 300px; height: 400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Trainer Name 9</h5>
+        <p>Specialization: Mindfulness and Wellness Coach</p>
+      </div>
+    </div>
+    <!-- team member 10 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/48/21/4b/48214b8a912296a564b24d12f4c904ca.jpg" class="d-block" alt="Trainer 10" style="width: 300px; height: 400px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Trainer Name 10</h5>
+        <p>Specialization: Functional Training Specialist</p>
       </div>
     </div>
   </div>
+  <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+   </div>
 </section>
 
 
 
 
 
-<!--------------------------------------------------- Services Section ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Red border horizontal line with space -->
+<div style="border-top: 8px solid red; margin-top: 20px; margin-bottom: 20px;"></div>
+
+
+
+<!--------------------------------- Services Section ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <section id="services" class="section services-section">
   <div class="service">
     <h2 class="section-title animate__animated animate__fadeIn">Our Services</h2>
     <div class="membership-options animate__animated animate__fadeInLeft">
-      <h3>Membership Options</h3>
+      <h3 style="color: #0909dc; font-weight: bold;">Membership Options</h3>
       <p>Choose from our range of membership plans tailored to fit your lifestyle and fitness goals. Whether you prefer solo workouts or group classes, we have a membership option for you.</p>
       <!-- Membership plan details can be added here -->
 <div class="membership-details">
-  <h3>Membership Plan Details</h3>
+  <h3 style="color: #0909dc; font-weight: bold;">Membership Plan Details</h3>
   <ul>
     <li>Basic Membership: Access to gym facilities</li>
     <li>Gold Membership: Access to gym facilities and all fitness classes</li>
@@ -316,126 +491,179 @@ body {
 </div>
 
     </div>
-    <div class="classes animate__animated animate__fadeInUp">
-      <h3>Fitness Classes</h3>
-      <p>Join our dynamic fitness classes led by certified instructors. From yoga and Zumba to strength training and HIIT, there's something for everyone.</p>
 
-    </div>
     <div class="personal-training animate__animated animate__fadeInRight">
-      <h3>Personal Training</h3>
+      <h3 style="color: #0909dc; font-weight: bold;">Personal Training</h3>
       <p>Accelerate your progress with personalized training sessions tailored to your specific needs and goals. Our experienced trainers will provide expert guidance and support every step of the way.</p>
      <!-- Personal training packages and rates can be added here -->
 <div class="personal-training-packages">
-  <h3>Personal Training Packages</h3>
+  <h3 style="color: #0909dc; font-weight: bold;">Gym Packages</h3>
   <ul>
-    <li>Basic Package: 5 sessions/month</li>
-    <li>Advanced Package: 10 sessions/month + nutrition counseling</li>
-    <li>Premium Package: Unlimited sessions/month + personalized workout plan</li>
+    <li>daily Package: 400/day</li>
+    <li>2 weeks Package: 2,500 Ksh</li>
+    <li>1 month Package: 4,200 Kah</li>
+    <li>3 months Package: 11,500 Kah</li>
+    <li>6 months Package: 22,500 Kah</li>
+    <li>1 year Package: 42,000 Kah</li>
   </ul>
 </div>
     </div>
   </div>
-  <!-- Schedule -->
-   <div class="classes animate__animated animate__fadeInUp">
-      <h3>Fitness Classes</h3>
-      <p>Join our dynamic fitness classes led by certified instructors. From yoga and Zumba to strength training and HIIT, there's something for everyone.</p>
-   </div>
-<section id="schedule" class="section schedule-section">
+ <section id="schedule" class="section schedule-section">
   <div class="schedule">
     <h2 class="section-title animate__animated animate__fadeIn">Class Schedule</h2>
+      <p>Join our dynamic fitness classes led by certified instructors. From yoga and Zumba to strength training and HIIT, there's something for everyone.</p>
     <div class="timetable animate__animated animate__fadeIn">
-     <table>
-    <tr>
-      <th>Time</th>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th>
-      <th>Friday</th>
-    </tr>
-    <tr>
-      <td>6:00 AM - 7:00 AM</td>
-      <td>Yoga (Trainer: Sarah)</td>
-      <td></td>
-      <td></td>
-      <td>Pilates (Trainer: John)</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>8:00 AM - 9:00 AM</td>
-      <td></td>
-      <td>Zumba (Trainer: Emily)</td>
-      <td></td>
-      <td>CrossFit (Trainer: Mike)</td>
-      <td>HIIT (Trainer: Lisa)</td>
-    </tr>
-    <tr>
-      <td>10:00 AM - 11:00 AM</td>
-      <td></td>
-      <td>Spinning (Trainer: David)</td>
-      <td>Pilates (Trainer: John)</td>
-      <td></td>
-      <td>CrossFit (Trainer: Mike)</td>
-    </tr>
-    <tr>
-      <td>12:00 PM - 1:00 PM</td>
-      <td>Lunch Break</td>
-      <td>Lunch Break</td>
-      <td>Lunch Break</td>
-      <td>Lunch Break</td>
-      <td>Lunch Break</td>
-    </tr>
-    <tr>
-      <td>2:00 PM - 3:00 PM</td>
-      <td>Weightlifting (Trainer: Emma)</td>
-      <td>Pilates (Trainer: John)</td>
-      <td>Zumba (Trainer: Emily)</td>
-      <td>CrossFit (Trainer: Mike)</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>4:00 PM - 5:00 PM</td>
-      <td>Cardio Kickboxing (Trainer: Adam)</td>
-      <td>Yoga (Trainer: Sarah)</td>
-      <td></td>
-      <td>Pilates (Trainer: John)</td>
-      <td>HIIT (Trainer: Lisa)</td>
-    </tr>
-    <tr>
-      <td>6:00 PM - 7:00 PM</td>
-      <td></td>
-      <td>Zumba (Trainer: Emily)</td>
-      <td>CrossFit (Trainer: Mike)</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Add more rows for additional time slots and classes -->
-  </table>
-</div>
+      <table>
+        <tr>
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+        <tr>
+          <td>6:00 AM - 7:00 AM</td>
+          <td>Yoga (Trainer: Sarah)</td>
+          <td></td>
+          <td></td>
+          <td>Pilates (Trainer: John)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8:00 AM - 9:00 AM</td>
+          <td></td>
+          <td>Zumba (Trainer: Emily)</td>
+          <td></td>
+          <td>CrossFit (Trainer: Mike)</td>
+          <td>HIIT (Trainer: Lisa)</td>
+        </tr>
+        <tr>
+          <td>10:00 AM - 11:00 AM</td>
+          <td></td>
+          <td>Spinning (Trainer: David)</td>
+          <td>Pilates (Trainer: John)</td>
+          <td></td>
+          <td>CrossFit (Trainer: Mike)</td>
+        </tr>
+        <tr>
+          <td>12:00 PM - 1:00 PM</td>
+          <td>Lunch Break</td>
+          <td>Lunch Break</td>
+          <td>Lunch Break</td>
+          <td>Lunch Break</td>
+          <td>Lunch Break</td>
+        </tr>
+        <tr>
+          <td>2:00 PM - 3:00 PM</td>
+          <td>Weightlifting (Trainer: Emma)</td>
+          <td>Pilates (Trainer: John)</td>
+          <td>Zumba (Trainer: Emily)</td>
+          <td>CrossFit (Trainer: Mike)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4:00 PM - 5:00 PM</td>
+          <td>Cardio Kickboxing (Trainer: Adam)</td>
+          <td>Yoga (Trainer: Sarah)</td>
+          <td></td>
+          <td>Pilates (Trainer: John)</td>
+          <td>HIIT (Trainer: Lisa)</td>
+        </tr>
+        <tr>
+          <td>6:00 PM - 7:00 PM</td>
+          <td></td>
+          <td>Zumba (Trainer: Emily)</td>
+          <td>CrossFit (Trainer: Mike)</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <!-- Add more rows for additional time slots and classes -->
+      </table>
+    </div>
   </div>
 </section>
-</section>
+
 
 <!-- Facilities -->
 <section id="facilities" class="section facilities-section">
   <div class="service">
     <h2 class="section-title animate__animated animate__fadeIn">Our Facilities</h2>
     <div class="gym-equipment animate__animated animate__fadeInLeft">
-      <h3>Gym Equipment</h3>
+      <h3 style="color: #0909dc; font-weight: bold;">Gym Equipment</h3>
       <p>Experience state-of-the-art equipment designed to maximize your workout efficiency and effectiveness. From cardio machines to strength training equipment, we've got you covered.</p>
     <!-- Carousel for gym equipment images -->
 <div id="gymCarousel" class="carousel slide animate__animated animate__fadeIn" data-ride="carousel">
   <div class="carousel-inner">
+    <!-- facility 1 -->
     <div class="carousel-item active">
   <img src="https://i.pinimg.com/564x/4e/a8/c3/4ea8c3a51104b7169172da8a1cdc41c4.jpg" class="d-block" alt="Gym Equipment 1" style="width: 300px; height: 400px;">
       <div class="carousel-caption">
         <h5>Treadmill</h5>
       </div>
     </div>
+    <!--facility 2 -->
     <div class="carousel-item">
       <img src="https://i.pinimg.com/564x/12/aa/d0/12aad031cff9c14c19588f8fd6741c89.jpg" class="d-block" alt="Gym Equipment 2" style="width: 300px; height: 400px;">
       <div class="carousel-caption">
         <h5>Dumbbells</h5>
+      </div>
+    </div>
+    <!-- facility 3 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/f4/74/6a/f4746a17517d29d8cd89f5ae02434b41.jpg" class="d-block" alt="Gym Equipment 2" style="width: 300px; height: 400px;">
+      <div class="carousel-caption">
+        <h5>Stationary Bike</h5>
+      </div>
+    </div>
+     <!-- facility 4 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/08/07/27/080727c1d90f28235389f3ba8c9eefc6.jpg" class="d-block" alt="Gym Equipment 2" style="width: 300px; height: 400px;">
+      <div class="carousel-caption">
+        <h5>Rowing Machine</h5>
+      </div>
+    </div>
+     <!-- facility 5 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/87/be/96/87be9698b7a0cc8a8c034fe4fc3b953a.jpg" class="d-block" alt="Gym Equipment 2" style="width: 300px; height: 400px;">
+      <div class="carousel-caption">
+        <h5>Smith Machine</h5>
+      </div>
+    </div>
+     <!-- facility 6 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/49/c6/b2/49c6b2701c0658bc2ccbf0ebd9a1ca91.jpg" class="d-block" alt="Gym Equipment 2" style="width: 300px; height: 400px;">
+      <div class="carousel-caption">
+        <h5>Barbells</h5>
+      </div>
+    </div>
+     <!-- facility 7 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/19/82/95/198295fd329cda1cf7e2bff5b36e1379.jpg" class="d-block" alt="Gym Equipment 2" style="width: 300px; height: 400px;">
+      <div class="carousel-caption">
+        <h5>Cable Machine</h5>
+      </div>
+    </div>
+     <!-- facility 8 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/eb/c5/d3/ebc5d3a8e8175cf92628ea71b7627c7c.jpg" class="d-block" alt="Gym Equipment 2" style="width: 300px; height: 400px;">
+      <div class="carousel-caption">
+        <h5>Leg Press Machine</h5>
+      </div>
+    </div>
+     <!-- facility 9 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/77/7d/bb/777dbbef4cd6ce39ff6bd4d11a71af00.jpg" class="d-block" alt="Gym Equipment 2" style="width: 300px; height: 400px;">
+      <div class="carousel-caption">
+        <h5>Leg Curl Machine</h5>
+      </div>
+    </div>
+     <!-- facility 10 -->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/72/c6/89/72c68940000812de8ae3e88fa3d69887.jpg" class="d-block" alt="Gym Equipment 2" style="width: 300px; height: 400px;">
+      <div class="carousel-caption">
+        <h5>lat pulldown machine</h5>
       </div>
     </div>
     <!-- Add more carousel items as needed -->
@@ -451,23 +679,54 @@ body {
 </div>
     </div>
     <div class="amenities animate__animated animate__fadeInRight">
-      <h3>Amenities</h3>
+      <h3 style="color: #0909dc; font-weight: bold;">Amenities</h3>
       <p>Enjoy our range of amenities designed to enhance your gym experience. From showers and lockers to a sauna and smoothie bar, we have everything you need to feel refreshed and rejuvenated.</p>
      <!-- Carousel for amenities images -->
 <div id="amenitiesCarousel" class="carousel slide animate__animated animate__fadeIn" data-ride="carousel">
   <div class="carousel-inner">
+    <!-- amenity 1-->
     <div class="carousel-item active">
-      <img src="https://i.pinimg.com/564x/c9/4f/d8/c94fd8dfb64bfa99bdba56eb485041c9.jpg" class="d-block" alt="Amenity 1" style="width: 300px; height: 400px;">
+      <img src="https://i.pinimg.com/564x/c9/4f/d8/c94fd8dfb64bfa99bdba56eb485041c9.jpg" class="d-block" alt="Amenity 1" style="width: 300px; height: 300px;">
       <div class="carousel-caption">
         <h5>Shower</h5>
       </div>
     </div>
+    <!-- amenity 2-->
     <div class="carousel-item">
-      <img src="https://i.pinimg.com/564x/3c/e6/e6/3ce6e63f9591406886f9a103f5f40550.jpg" class="d-block" alt="Amenity 2" style="width: 300px; height: 400px;">
+      <img src="https://i.pinimg.com/564x/3c/e6/e6/3ce6e63f9591406886f9a103f5f40550.jpg" class="d-block" alt="Amenity 2" style="width: 300px; height: 320px;">
       <div class="carousel-caption">
         <h5>Smoothie Bar</h5>
       </div>
     </div>
+     <!-- amenity 3-->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/19/34/2b/19342b178e8d74c87d9b6d61937b99e9.jpg" class="d-block" alt="Amenity 2" style="width: 300px; height: 320px;">
+      <div class="carousel-caption">
+        <h5>Locker room</h5>
+      </div>
+    </div>
+     <!-- amenity 4-->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/94/64/21/946421935e9dc448531254ae842ef3df.jpg" class="d-block" alt="Amenity 2" style="width: 300px; height: 320px;">
+      <div class="carousel-caption">
+        <h5>Cardio space area</h5>
+      </div>
+    </div>
+     <!-- amenity 5-->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/41/84/2b/41842be568b5c6ab81d0a5f90f8d12e8.jpg" class="d-block" alt="Amenity 2" style="width: 300px; height: 320px;">
+      <div class="carousel-caption">
+        <h5>Weight Training Area</h5>
+      </div>
+    </div>
+     <!-- amenity 6-->
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/564x/3d/04/dc/3d04dc1ff6b1f6f98ac5fedce42d8283.jpg" class="d-block" alt="Amenity 2" style="width: 300px; height: 320px;">
+      <div class="carousel-caption">
+        <h5>Functional Training Area</h5>
+      </div>
+    </div>
+
     <!-- Add more carousel items as needed -->
   </div>
   <a class="carousel-control-prev" href="#amenitiesCarousel" role="button" data-slide="prev">
@@ -484,24 +743,47 @@ body {
 </section>
 
 
-  <!------------------------------------------------- Contact -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+  <!-- Red border horizontal line with space -->
+<div style="border-top: 8px solid red; margin-top: 20px; margin-bottom: 20px;"></div>
+
+
+
+ <!--------------------------------- Contact -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <section id="contact" class="section contact-section">
   <div class="contact">
     <h2 class="section-title animate_animated animate_fadeIn">Contact Us</h2>
     <p class="section-description animate_animated animate_fadeIn">For inquiries or assistance, feel free to contact us:</p>
-    <ul class="contact-details animate_animated animate_fadeIn">
-      <li>Phone: [Your Phone Number]</li>
-      <li>Email: [Your Email Address]</li>
-      <li>Address: Kahawa Sukari Ave, Nairobi</li>
-    </ul>
+
     <!-- Map -->
     <div class="map-container animate_animated animate_fadeIn">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.670298212516!2d36.93055131431349!3d-1.1898618359455117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f31f236da67%3A0x1cb2d06ee6f238ad!2sNatty%20Gym%20Kahawa%2C%20Kahawa%20Sukari%20Ave%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1621762902579!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-  </div>
+   <!-- Contact Form -->
+<div class="contact-form animate_animated animate_fadeIn" style="background-color: #000; color: #d4af37;">
+  <h3 style="color: #ff0000;">Send us a message</h3>
+  <form action="https://formspree.io/f/xjvnzlyo" method="POST">
+    <label style="color: #d4af37;">Your email:
+      <input type="email" name="email" style="background-color: #000; color: #d4af37;">
+    </label>
+    <label style="color: #d4af37;">Your message:
+      <textarea name="message" style="background-color: #000; color: #d4af37;"></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit" style="background-color: #ff0000; color: #000;">Send</button>
+  </form>
+</div>
+</div>
 </section>
 
-<!--------------------------------------------- Java Script --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+  <!-- Red border horizontal line with space -->
+<div style="border-top: 19px solid #2c2c31; margin-top: 20px; margin-bottom: 20px;"></div>
+
+
+
+<!------------------------------------ Java Script --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
   <script src="script.js"></script>
   <script>
     // Smooth scrolling for navigation links
